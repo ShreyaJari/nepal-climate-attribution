@@ -1,0 +1,7 @@
+earthengine-api
+numpy
+pandas
+scipy
+matplotlib
+torch
+shap

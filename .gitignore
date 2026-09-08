@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv-climate-attribution/
+*.egg-info/
+
+# Large or regeneratable data
+data/raw/t2m_fields/*.npz
+results/*.csv
+models/*.pt
+models/*.npz
+
+# Keep folder structure even though contents are ignored
+!data/raw/.gitkeep
+!results/.gitkeep
+!models/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Earth Engine credentials
+.config/earthengine/
