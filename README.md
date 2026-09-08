@@ -2,12 +2,18 @@
 
 ![Python](https://img.shields.io/badge/python-3.11-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
+![VAE](https://img.shields.io/badge/model-Variational%20Autoencoder-6A5ACD)
+![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-0F9D58?logo=googleearth&logoColor=white)
+![SHAP](https://img.shields.io/badge/explainability-SHAP-8A2BE2)
 ![Data](https://img.shields.io/badge/data-ERA5--Land-0F6E56)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 On August 26, 2026, an ice-rock avalanche collapsed from the north face of Langtang Lirung on the Nepal-Tibet border, triggering a flood down the Lehende Khola that killed hundreds of people. This project asks a narrow question about it: were the thermal conditions in the weeks before the collapse unusual for this exact location, and does that fit the region's longer-term warming trend?
 
-It is not a climate attribution study. There is no probability-ratio claim here and no claim that climate change caused this collapse. That kind of formal detection-and-attribution work needs a full counterfactual ensemble, which is a research-group-scale undertaking. What's here is smaller and more honest about its limits: a screening analysis, done two structurally different ways, that tells you how unusual things looked and whether that fits a real trend.
+It is not a climate attribution study. There is no probability ratio claim here and no claim that climate change caused this collapse. That kind of formal detection and attribution work needs a full counterfactual ensemble, which is a research group scale undertaking. What's here is smaller and more honest about its limits: a screening analysis, done two structurally different ways, that tells you how unusual things looked and whether that fits a real trend.
 
 ![Method A explainer figure](figures/method_a_explainer_figure.png)
 
@@ -115,9 +121,9 @@ python3 diagnose_and_explain.py
 
 ERA5-Land (Copernicus/ECMWF) via Google Earth Engine, 1950 to 2026. MODIS land surface temperature (Terra and Aqua, day and night) for the independent cross-check. Copernicus DEM for elevation. GTN-P's published CALM and TSP station metadata for the permafrost coverage check.
 
-## Limitations, stated plainly
+## Limitations
 
-This is attribution-adjacent screening, not formal detection and attribution. A single ERA5-Land grid cell's absolute temperature isn't trustworthy in this terrain (the elevation grid is too coarse for the relief here), so only relative statistics (percentile rank, trend) are used for anything that gets compared across locations. No permafrost data exists near this site, so the actual destabilizing mechanism is inferred from atmospheric proxies, not measured directly. MODIS cross-checks are directionally consistent with the main finding but too sparse or physically mismatched (land surface temperature isn't the same quantity as 2m air temperature) to serve as precise quantitative confirmation.
+This is attribution adjacent screening, not formal detection and attribution. A single ERA5-Land grid cell's absolute temperature isn't trustworthy in this terrain (the elevation grid is too coarse for the relief here), so only relative statistics (percentile rank, trend) are used for anything that gets compared across locations. No permafrost data exists near this site, so the actual destabilizing mechanism is inferred from atmospheric proxies, not measured directly. MODIS cross-checks are directionally consistent with the main finding but too sparse or physically mismatched (land surface temperature isn't the same quantity as 2m air temperature) to serve as precise quantitative confirmation.
 
 ## License
 
