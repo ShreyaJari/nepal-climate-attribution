@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "Nepal Ice-Rock Collapse: Climate Screening"
+authors:
+  - family-names: "Jariwala"
+    given-names: "Shreya"
+    orcid: "https://orcid.org/[your ORCID iD]"
+version: "1.0.0"
+date-released: "[YYYY-MM-DD, matches your GitHub release date]"
+url: "https://github.com/ShreyaJari/nepal-climate-attribution"
+repository-code: "https://github.com/ShreyaJari/nepal-climate-attribution"
+license: MIT
+keywords:
+  - geoai
+  - remote-sensing
+  - earth-observation
+  - climate-screening
+  - era5-land
+  - anomaly-detection
+abstract: >
+  A two-method screening analysis of thermal conditions before the August
+  2026 Langtang Lirung ice-rock collapse, combining trend-based statistics
+  and a VAE-based anomaly detector on ERA5-Land reanalysis to test whether
+  pre-event warmth was unusual against a 76-year baseline. Not a formal
+  climate attribution study; explicitly scoped as screening.
