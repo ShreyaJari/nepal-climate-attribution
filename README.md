@@ -117,9 +117,15 @@ python3 diagnose_and_explain.py
 
 `fetch_spatial_fields.py` fetches 77 years of spatial data one year at a time and is resumable. If it fails partway through, just run it again and it'll pick up where it left off.
 
+## References
+
+- Muñoz-Sabater, J. et al. (2021). "ERA5-Land: a state-of-the-art global reanalysis dataset for land applications." Earth System Science Data, 13, 4349–4383. https://doi.org/10.5194/essd-13-4349-2021
+- Biskaborn, B.K. et al. (2015). "The new database of the Global Terrestrial Network for Permafrost (GTN-P)." Earth System Science Data, 7, 245–259. https://doi.org/10.5194/essd-7-245-2015
+
 ## Data sources
 
-ERA5-Land (Copernicus/ECMWF) via Google Earth Engine, 1950 to 2026. MODIS land surface temperature (Terra and Aqua, day and night) for the independent cross-check. Copernicus DEM for elevation. GTN-P's published CALM and TSP station metadata for the permafrost coverage check.
+- ERA5-Land (Copernicus/ECMWF) via Google Earth Engine, 1950 to 2026. MODIS land surface temperature (Terra and Aqua, day and night) for the independent cross-check. Copernicus DEM for elevation. GTN-P's published CALM and TSP station metadata for the permafrost coverage check.
+- Wan, Z., Hook, S., & Hulley, G. (2021). MOD11A1 MODIS/Terra Land Surface Temperature/Emissivity Daily L3 Global 1km SIN Grid, Version 61 [Data set]. NASA EOSDIS Land Processes DAAC. https://doi.org/10.5067/MODIS/MOD11A1.061
 
 ## Limitations
 
