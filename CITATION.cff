@@ -5,7 +5,7 @@ authors:
   - family-names: "Jariwala"
     given-names: "Shreya"
 version: "1.0.0"
-date-released: "[YYYY-MM-DD, matches your GitHub release date]"
+date-released: "2026-09-17"
 url: "https://github.com/ShreyaJari/nepal-climate-attribution"
 repository-code: "https://github.com/ShreyaJari/nepal-climate-attribution"
 license: MIT
